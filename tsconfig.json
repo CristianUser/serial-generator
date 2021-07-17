@@ -6,9 +6,16 @@
     "outDir": "./dist",
     "strict": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "removeComments": true
   },
   "include": [
-    "src/**/*"
-  ]
+    "src/**/*",
+    "tests/**/*.test.ts"
+  ],
+  "files": [
+    "src/index.ts",
+  ],
+  "types": ["jest"]
 }
